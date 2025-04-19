@@ -32,21 +32,21 @@ export default function Home() {
                 <p className="text-sm font-medium text-teal-400">Powered by Single Grain</p>
               </div>
 
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
                 Boost Page Rankings with <br className="hidden lg:block" />
                 <span className="text-teal-400">Automated Internal Linking</span>
               </h1>
 
-              <p className="text-lg sm:text-xl text-gray-300 leading-relaxed">
+              <p className="text-xl text-gray-300">
                 Our AI-powered <span className="text-teal-400">internal link building tool</span> identifies and
                 implements internal linking opportunities, automatically rewriting your content to boost SEO
                 performance.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-6 pt-6">
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Button
                   size="lg"
-                  className="bg-teal-500 hover:bg-teal-600 text-white rounded-md px-6 py-6 text-base"
+                  className="bg-teal-500 hover:bg-teal-600 text-white rounded-md px-8"
                   onClick={() => document.getElementById("contact-form")?.scrollIntoView({ behavior: "smooth" })}
                 >
                   Get 100 Free Internal Links <ArrowRight className="ml-2 h-4 w-4" />
@@ -55,29 +55,29 @@ export default function Home() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white rounded-md py-6 text-base"
+                  className="border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white rounded-md"
                 >
                   See How It Works
                 </Button>
               </div>
 
-              <div className="pt-8 space-y-3">
+              <div className="pt-6">
                 <p className="text-gray-400 flex items-center">
-                  <Check className="h-5 w-5 text-teal-400 mr-3 flex-shrink-0" />
+                  <Check className="h-5 w-5 text-teal-400 mr-2" />
                   <span>Guaranteed ranking increases</span>
                 </p>
                 <p className="text-gray-400 flex items-center">
-                  <Check className="h-5 w-5 text-teal-400 mr-3 flex-shrink-0" />
+                  <Check className="h-5 w-5 text-teal-400 mr-2" />
                   <span>100% automated process</span>
                 </p>
                 <p className="text-gray-400 flex items-center">
-                  <Check className="h-5 w-5 text-teal-400 mr-3 flex-shrink-0" />
+                  <Check className="h-5 w-5 text-teal-400 mr-2" />
                   <span>Personalized AI agent trained on your website</span>
                 </p>
               </div>
             </div>
 
-            <div className="lg:w-1/2 relative mt-10 lg:mt-0">
+            <div className="lg:w-1/2 relative">
               <div className="absolute -inset-0.5 bg-gradient-to-r from-teal-500 to-teal-300 rounded-lg blur opacity-75"></div>
               <div className="relative">
                 <WorkflowPreview />
@@ -95,10 +95,10 @@ export default function Home() {
       <section className="py-20 px-4 md:px-8 lg:px-16 bg-gray-900">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
               How Our <span className="text-teal-400">Internal Linking Tool</span> Works
             </h2>
-            <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Our AI-powered workflow automates the entire internal linking process, from analysis to implementation,
               saving you time and boosting your rankings.
             </p>
@@ -112,10 +112,10 @@ export default function Home() {
       <section className="py-20 px-4 md:px-8 lg:px-16 bg-gray-950">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
               See the Difference with <span className="text-teal-400">Automated Internal Linking</span>
             </h2>
-            <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Our AI agent intelligently rewrites your content to naturally incorporate internal links, improving user
               experience and SEO performance.
             </p>
@@ -129,8 +129,8 @@ export default function Home() {
       <section className="py-20 px-4 md:px-8 lg:px-16 bg-gray-900">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">Smart Link Suggestions</h2>
-            <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Smart Link Suggestions</h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Our <span className="text-teal-400">internal link building tool</span> analyzes your content to find the
               most relevant internal linking opportunities, helping you build a stronger site architecture.
             </p>
@@ -145,12 +145,12 @@ export default function Home() {
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-teal-400 to-transparent"></div>
 
         <div className="container mx-auto relative z-10">
-          <div className="max-w-4xl mx-auto bg-gray-900 p-6 sm:p-8 md:p-12 rounded-xl border border-gray-800 shadow-2xl">
+          <div className="max-w-4xl mx-auto bg-gray-900 p-8 md:p-12 rounded-xl border border-gray-800 shadow-2xl">
             <div className="text-center mb-8">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 Get 100 Internal Links <span className="text-teal-400">Completely Free</span>
               </h2>
-              <p className="text-lg sm:text-xl text-gray-300 leading-relaxed">
+              <p className="text-xl text-gray-300">
                 We're so confident in our <span className="text-teal-400">automated internal linking</span> service that
                 we're offering 100 internal links at no cost. Fill out the form below to get started.
               </p>
@@ -165,12 +165,12 @@ export default function Home() {
       <footer className="py-12 px-4 md:px-8 lg:px-16 bg-gray-900 border-t border-gray-800">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-8 md:mb-0">
+            <div className="mb-6 md:mb-0">
               <Image src="/clickflow-logo.png" alt="Clickflow Logo" width={180} height={50} className="h-10 w-auto" />
-              <p className="text-gray-400 mt-3">Powered by Single Grain</p>
+              <p className="text-gray-400 mt-2">Powered by Single Grain</p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 text-center sm:text-left">
+            <div className="flex flex-col md:flex-row gap-8">
               <Link href="#" className="text-gray-300 hover:text-teal-400">
                 Features
               </Link>

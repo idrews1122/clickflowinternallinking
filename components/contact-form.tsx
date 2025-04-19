@@ -57,8 +57,8 @@ export default function ContactForm() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
           </svg>
         </div>
-        <h3 className="text-2xl font-bold mb-4">Thank You!</h3>
-        <p className="text-gray-300 mb-6 leading-relaxed">
+        <h3 className="text-2xl font-bold mb-2">Thank You!</h3>
+        <p className="text-gray-300 mb-6">
           We've received your information and will be in touch shortly to get your 100 free internal links set up.
         </p>
         <Button className="bg-teal-500 hover:bg-teal-600 text-white" onClick={() => setIsSubmitted(false)}>
@@ -175,7 +175,7 @@ export default function ContactForm() {
 
       <Button
         type="submit"
-        className="w-full bg-teal-500 hover:bg-teal-600 text-white py-6 text-base"
+        className="w-full bg-teal-500 hover:bg-teal-600 text-white py-6 text-lg"
         disabled={isSubmitting}
       >
         {isSubmitting ? "Processing..." : "Get My 100 Free Internal Links"}

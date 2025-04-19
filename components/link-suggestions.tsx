@@ -46,11 +46,11 @@ export default function LinkSuggestions() {
               className={`mb-4 p-4 rounded-lg border ${index === 0 ? "border-teal-500/50 bg-gray-800" : "border-gray-700 bg-gray-900"}`}
             >
               <div className="flex justify-between items-center">
-                <div>
+                <div className="w-full pr-4">
                   <div className="font-medium mb-1">{suggestion.title}</div>
-                  <div className="text-sm text-teal-400">{suggestion.url}</div>
+                  <div className="text-sm text-teal-400 break-all">{suggestion.url}</div>
                 </div>
-                <ChevronDown className="h-5 w-5 text-gray-400" />
+                <ChevronDown className="h-5 w-5 text-gray-400 flex-shrink-0" />
               </div>
             </div>
           ))}

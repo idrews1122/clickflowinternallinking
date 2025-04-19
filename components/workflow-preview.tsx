@@ -52,8 +52,8 @@ export default function WorkflowPreview() {
 
       <div className="space-y-4">
         <div className="grid grid-cols-3 text-sm font-medium text-gray-400">
-          <div>Task</div>
-          <div>Current Action</div>
+          <div className="pr-2">Task</div>
+          <div className="pr-2">Current Action</div>
           <div>Status</div>
         </div>
 
@@ -80,16 +80,16 @@ export default function WorkflowPreview() {
           },
         ].map((item, index) => (
           <div key={index} className="grid grid-cols-3 items-center py-3 border-b border-gray-800 last:border-0">
-            <div className="flex items-center">
-              <div className="w-5 h-5 rounded-full bg-teal-500/20 flex items-center justify-center mr-2">
+            <div className="flex items-start pr-2">
+              <div className="w-5 h-5 rounded-full bg-teal-500/20 flex items-center justify-center mr-2 mt-0.5 flex-shrink-0">
                 <Check className="h-3 w-3 text-teal-400" />
               </div>
-              <span className="text-white">{item.task}</span>
+              <span className="text-white leading-tight">{item.task}</span>
             </div>
-            <div className="text-gray-300 text-sm">{item.action}</div>
+            <div className="text-gray-300 text-sm pr-2 leading-tight">{item.action}</div>
             <div>
               <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-teal-500/10 text-teal-400">
-                <Check className="h-3 w-3 mr-1" /> {item.status}
+                <Check className="h-3 w-3 mr-1 flex-shrink-0" /> {item.status}
               </span>
             </div>
           </div>

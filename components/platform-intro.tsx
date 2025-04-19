@@ -16,10 +16,10 @@ export default function PlatformIntro() {
 
       <div className="container mx-auto relative z-10">
         <div className="flex flex-col items-center text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-8 mt-10">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 mt-10">
             <div className="flex flex-col md:flex-row md:items-center md:justify-center">
-              <span className="mb-3 md:mb-0">Scale Your</span>
-              <div className="inline-block min-w-[240px] mb-3 md:mb-0 md:ml-2 md:min-w-0">
+              <span>Scale Your</span>
+              <div className="inline-block min-w-[240px] md:ml-2 md:min-w-0">
                 <TypewriterSlowdown
                   words={cyclingWords}
                   finalWord={finalWord}
@@ -28,19 +28,19 @@ export default function PlatformIntro() {
                 />
               </div>
             </div>
-            <div className="mt-3 md:mt-2">with AI-Powered Workflows</div>
+            <div className="mt-2">with AI-Powered Workflows</div>
           </h1>
 
-          <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mb-10 leading-relaxed px-2">
+          <p className="text-xl text-gray-300 max-w-3xl mb-8">
             Boost your page rankings with Clickflow's automated{" "}
             <span className="text-teal-400">internal linking tool</span>. Let our AI agents handle the heavy lifting
             while you focus on growth.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-6 mb-16 w-full px-4 sm:px-0 sm:w-auto">
+          <div className="flex flex-col sm:flex-row gap-4 mb-16">
             <Button
               size="lg"
-              className="bg-teal-500 hover:bg-teal-600 text-white rounded-md px-6 py-6 text-base"
+              className="bg-teal-500 hover:bg-teal-600 text-white rounded-md px-8"
               onClick={() => document.getElementById("contact-form")?.scrollIntoView({ behavior: "smooth" })}
             >
               Get 100 Free Internal Links <ArrowRight className="ml-2 h-4 w-4" />
@@ -49,25 +49,25 @@ export default function PlatformIntro() {
             <Button
               variant="outline"
               size="lg"
-              className="border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white rounded-md py-6 text-base"
+              className="border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white rounded-md"
             >
               See How It Works
             </Button>
           </div>
 
-          <div className="w-full mt-4">
-            <p className="text-sm font-medium text-gray-500 uppercase tracking-wider mb-8">
+          <div className="w-full">
+            <p className="text-sm font-medium text-gray-500 uppercase tracking-wider mb-6">
               Trusted by Industry Leaders
             </p>
 
-            <div className="flex flex-wrap justify-center gap-10 md:gap-16">
+            <div className="flex flex-wrap justify-center gap-12 md:gap-16">
               <div className="opacity-80 hover:opacity-100 transition-opacity">
                 <Image
                   src="/intuit-logo.png"
                   alt="Intuit logo"
                   width={120}
                   height={40}
-                  className="h-8 w-auto brightness-0 invert opacity-70"
+                  className="h-10 w-auto brightness-0 invert opacity-70"
                 />
               </div>
               <div className="opacity-80 hover:opacity-100 transition-opacity">
@@ -76,7 +76,7 @@ export default function PlatformIntro() {
                   alt="Amazon logo"
                   width={140}
                   height={40}
-                  className="h-7 w-auto brightness-0 invert opacity-70"
+                  className="h-8 w-auto brightness-0 invert opacity-70"
                 />
               </div>
               <div className="opacity-80 hover:opacity-100 transition-opacity">
@@ -85,7 +85,7 @@ export default function PlatformIntro() {
                   alt="Uber logo"
                   width={120}
                   height={40}
-                  className="h-7 w-auto brightness-0 invert opacity-70"
+                  className="h-8 w-auto brightness-0 invert opacity-70"
                 />
               </div>
               <div className="opacity-80 hover:opacity-100 transition-opacity">
@@ -94,7 +94,7 @@ export default function PlatformIntro() {
                   alt="Airbnb logo"
                   width={120}
                   height={40}
-                  className="h-7 w-auto brightness-0 invert opacity-70"
+                  className="h-8 w-auto brightness-0 invert opacity-70"
                 />
               </div>
             </div>
