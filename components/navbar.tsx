@@ -43,7 +43,7 @@ export default function Navbar() {
               className="bg-teal-500 hover:bg-teal-600 text-white"
               onClick={() => document.getElementById("contact-form")?.scrollIntoView({ behavior: "smooth" })}
             >
-              Get Started Free
+              Start Ranking Higher Now
             </Button>
           </div>
 
@@ -101,7 +101,7 @@ export default function Navbar() {
                   setIsMenuOpen(false)
                 }}
               >
-                Get Started Free
+                Start Ranking Higher Now
               </Button>
             </div>
           </div>

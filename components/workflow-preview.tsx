@@ -43,9 +43,9 @@ export default function WorkflowPreview() {
 
       <div className="mb-4">
         <p className="text-teal-400 text-sm mb-2 font-medium">Target URL:</p>
-        <a href="#" className="text-blue-400 text-sm hover:underline">
-          https://www.singlegrain.com/abm/how-to-do-account-based-marketing-in-7-steps/
-        </a>
+        <span className="text-blue-400 text-sm break-all">
+          https://www.winedeals.com/spirits/mezcal/del-maguey-santo-domingo-albarradas-single-village-mezcal-750-ml-87361.html
+        </span>
       </div>
 
       <div className="border-t border-gray-800 my-4"></div>

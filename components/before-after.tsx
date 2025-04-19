@@ -6,13 +6,13 @@ export default function BeforeAfter() {
       original: "Elegant, with a velvety texture and a long finish.",
       rewritten:
         "Elegant, presenting a light and unctuous flavor that transitions into a velvety texture and a long finish.",
-      score: "60%",
+      score: "90%",
     },
     {
       original: "Shows an expressive core of plum sauce, dried raspberry, red licorice and espresso flavors.",
       rewritten:
         "Shows an expressive core of plum sauce, dried raspberry, red licorice and espresso that creates a light and unctuous flavor profile.",
-      score: "56%",
+      score: "96%",
     },
   ]
 
