@@ -50,13 +50,15 @@ export default function WorkflowPreview() {
 
       <div className="border-t border-gray-800 my-4"></div>
 
-      <div className="space-y-4">
-        <div className="grid grid-cols-3 text-sm font-medium text-gray-400">
-          <div className="pr-2">Task</div>
-          <div className="pr-2">Current Action</div>
+      <div className="space-y-6">
+        {/* Column headers with more spacing */}
+        <div className="grid grid-cols-3 gap-2 text-sm font-medium text-gray-400">
+          <div>Task</div>
+          <div>Current Action</div>
           <div>Status</div>
         </div>
 
+        {/* Task items with improved spacing and layout */}
         {[
           {
             task: "Analyze Target Page",
@@ -79,18 +81,26 @@ export default function WorkflowPreview() {
             status: "Completed",
           },
         ].map((item, index) => (
-          <div key={index} className="grid grid-cols-3 items-center py-3 border-b border-gray-800 last:border-0">
-            <div className="flex items-start pr-2">
-              <div className="w-5 h-5 rounded-full bg-teal-500/20 flex items-center justify-center mr-2 mt-0.5 flex-shrink-0">
-                <Check className="h-3 w-3 text-teal-400" />
+          <div key={index} className="border-b border-gray-800 last:border-0 pb-4">
+            {/* Mobile-optimized layout */}
+            <div className="grid grid-cols-3 gap-2">
+              {/* Task column */}
+              <div className="flex items-start">
+                <div className="w-5 h-5 rounded-full bg-teal-500/20 flex items-center justify-center mr-2 mt-0.5 flex-shrink-0">
+                  <Check className="h-3 w-3 text-teal-400" />
+                </div>
+                <span className="text-white text-sm">{item.task}</span>
               </div>
-              <span className="text-white leading-tight">{item.task}</span>
-            </div>
-            <div className="text-gray-300 text-sm pr-2 leading-tight">{item.action}</div>
-            <div>
-              <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-teal-500/10 text-teal-400">
-                <Check className="h-3 w-3 mr-1 flex-shrink-0" /> {item.status}
-              </span>
+
+              {/* Current Action column */}
+              <div className="text-gray-300 text-sm">{item.action}</div>
+
+              {/* Status column */}
+              <div>
+                <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-teal-500/10 text-teal-400">
+                  <Check className="h-3 w-3 mr-1 flex-shrink-0" /> {item.status}
+                </span>
+              </div>
             </div>
           </div>
         ))}
