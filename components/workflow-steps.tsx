@@ -30,15 +30,15 @@ export default function WorkflowSteps() {
   ]
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 md:gap-6">
       {steps.map((step, index) => (
         <Card key={index} className="bg-gray-800 border-gray-700 overflow-hidden">
           <div className="h-2 bg-teal-500"></div>
-          <CardContent className="pt-6">
+          <CardContent className="pt-6 px-4 sm:px-6">
             <div className="flex flex-col items-center text-center">
               <div className="mb-4">{step.icon}</div>
-              <h3 className="text-xl font-bold mb-2">{step.title}</h3>
-              <p className="text-gray-300 mb-4">{step.description}</p>
+              <h3 className="text-xl font-bold mb-3">{step.title}</h3>
+              <p className="text-gray-300 mb-4 leading-relaxed">{step.description}</p>
               <div className="flex items-center text-teal-400">
                 <Check className="h-4 w-4 mr-1" />
                 <span className="text-sm font-medium">{step.status}</span>
