@@ -17,15 +17,18 @@ export default function PlatformIntro() {
       <div className="container mx-auto relative z-10">
         <div className="flex flex-col items-center text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 mt-10">
-            Scale Your{" "}
-            <TypewriterSlowdown
-              words={cyclingWords}
-              finalWord={finalWord}
-              className="text-teal-400"
-              finalClassName="text-blue-400 underline decoration-2 underline-offset-4 cursor-default"
-            />{" "}
-            <br className="hidden md:block" />
-            with AI-Powered Workflows
+            <div className="flex flex-col md:flex-row md:items-center md:justify-center">
+              <span>Scale Your</span>
+              <div className="inline-block min-w-[240px] md:ml-2 md:min-w-0">
+                <TypewriterSlowdown
+                  words={cyclingWords}
+                  finalWord={finalWord}
+                  className="text-teal-400"
+                  finalClassName="text-blue-400 underline decoration-2 underline-offset-4 cursor-default"
+                />
+              </div>
+            </div>
+            <div className="mt-2">with AI-Powered Workflows</div>
           </h1>
 
           <p className="text-xl text-gray-300 max-w-3xl mb-8">
