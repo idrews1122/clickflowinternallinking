@@ -34,11 +34,7 @@ export default function Navbar() {
             </nav>
           </div>
 
-          <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" className="border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white">
-              Log In
-            </Button>
-
+          <div className="hidden md:flex items-center">
             <Button
               className="bg-teal-500 hover:bg-teal-600 text-white"
               onClick={() => document.getElementById("contact-form")?.scrollIntoView({ behavior: "smooth" })}
@@ -84,26 +80,16 @@ export default function Navbar() {
               Contact
             </Link>
           </div>
-          <div className="pt-4 pb-3 border-t border-gray-800">
-            <div className="flex items-center px-5 space-x-3">
-              <Button
-                variant="outline"
-                className="w-full border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white"
-              >
-                Log In
-              </Button>
-            </div>
-            <div className="mt-3 px-5 pb-3">
-              <Button
-                className="w-full bg-teal-500 hover:bg-teal-600 text-white"
-                onClick={() => {
-                  document.getElementById("contact-form")?.scrollIntoView({ behavior: "smooth" })
-                  setIsMenuOpen(false)
-                }}
-              >
-                Start Ranking Higher Now
-              </Button>
-            </div>
+          <div className="mt-3 px-5 pb-3">
+            <Button
+              className="w-full bg-teal-500 hover:bg-teal-600 text-white"
+              onClick={() => {
+                document.getElementById("contact-form")?.scrollIntoView({ behavior: "smooth" })
+                setIsMenuOpen(false)
+              }}
+            >
+              Start Ranking Higher Now
+            </Button>
           </div>
         </div>
       )}
