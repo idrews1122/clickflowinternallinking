@@ -33,7 +33,7 @@ export default function LinkSuggestions() {
           <div className="text-xl font-bold mb-4">Review Internal Link Suggestions</div>
           <p className="text-gray-300 mb-6">Review and approve content rewriting with internal links</p>
 
-          <div className="flex justify-between mb-6">
+          <div className="flex flex-col sm:flex-row justify-between gap-3 mb-6">
             <Button variant="outline" className="border-gray-700 text-gray-300 hover:bg-gray-700">
               Select All
             </Button>
