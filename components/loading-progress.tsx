@@ -60,10 +60,8 @@ export default function LoadingProgress() {
               ></div>
             </div>
 
-            <div className="flex justify-between w-full text-sm text-gray-400 mb-6">
-              <span>0%</span>
+            <div className="flex justify-center w-full text-sm text-gray-400 mb-6">
               <span>{progress}%</span>
-              <span>100%</span>
             </div>
 
             <div className="flex items-center space-x-3">
