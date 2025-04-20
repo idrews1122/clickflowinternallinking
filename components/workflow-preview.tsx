@@ -105,12 +105,6 @@ export default function WorkflowPreview() {
           </div>
         ))}
       </div>
-
-      <div className="mt-6 flex justify-end">
-        <div className="px-4 py-2 bg-teal-500 text-white rounded-md text-sm font-medium cursor-pointer hover:bg-teal-600 transition-colors">
-          View Details
-        </div>
-      </div>
     </div>
   )
 }

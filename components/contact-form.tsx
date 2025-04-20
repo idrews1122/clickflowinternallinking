@@ -178,7 +178,7 @@ export default function ContactForm() {
         className="w-full bg-teal-500 hover:bg-teal-600 text-white py-6 text-lg"
         disabled={isSubmitting}
       >
-        {isSubmitting ? "Processing..." : <span className="px-2 sm:px-0">Get Free Internal Links</span>}
+        {isSubmitting ? "Processing..." : <span className="px-2 sm:px-0">Get Your Free Internal Links</span>}
       </Button>
 
       <p className="text-sm text-gray-400 text-center">

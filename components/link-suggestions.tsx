@@ -1,6 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { ChevronDown } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Check, X } from "lucide-react"
 
 export default function LinkSuggestions() {
   const suggestions = [
@@ -33,13 +32,6 @@ export default function LinkSuggestions() {
           <div className="text-xl font-bold mb-4">Review Internal Link Suggestions</div>
           <p className="text-gray-300 mb-6">Review and approve content rewriting with internal links</p>
 
-          <div className="flex flex-col sm:flex-row justify-between gap-3 mb-6">
-            <Button variant="outline" className="border-gray-700 text-gray-300 hover:bg-gray-700">
-              Select All
-            </Button>
-            <Button className="bg-teal-500 hover:bg-teal-600 text-white">Continue with Selected</Button>
-          </div>
-
           {suggestions.map((suggestion, index) => (
             <div
               key={index}
@@ -50,7 +42,14 @@ export default function LinkSuggestions() {
                   <div className="font-medium mb-1">{suggestion.title}</div>
                   <div className="text-sm text-teal-400 break-all">{suggestion.url}</div>
                 </div>
-                <ChevronDown className="h-5 w-5 text-gray-400 flex-shrink-0" />
+                <div className="flex items-center space-x-3 flex-shrink-0">
+                  <div className="w-8 h-8 rounded-full bg-teal-500/20 flex items-center justify-center cursor-default">
+                    <Check className="h-4 w-4 text-teal-400" />
+                  </div>
+                  <div className="w-8 h-8 rounded-full bg-red-500/20 flex items-center justify-center cursor-default">
+                    <X className="h-4 w-4 text-red-400" />
+                  </div>
+                </div>
               </div>
             </div>
           ))}
