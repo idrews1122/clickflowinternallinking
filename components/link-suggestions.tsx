@@ -42,7 +42,7 @@ export default function LinkSuggestions() {
                   <div className="font-medium mb-1">{suggestion.title}</div>
                   <div className="text-sm text-teal-400 break-all">{suggestion.url}</div>
                 </div>
-                <div className="flex items-center space-x-3 flex-shrink-0">
+                <div className="flex items-center space-x-3 flex-shrink-0 hidden sm:flex">
                   <div className="w-8 h-8 rounded-full bg-teal-500/20 flex items-center justify-center cursor-default">
                     <Check className="h-4 w-4 text-teal-400" />
                   </div>
