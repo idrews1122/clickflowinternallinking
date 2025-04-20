@@ -82,8 +82,8 @@ export default function WorkflowPreview() {
           },
         ].map((item, index) => (
           <div key={index} className="border-b border-gray-800 last:border-0 pb-4">
-            {/* Mobile-optimized layout */}
-            <div className="grid grid-cols-3 gap-2">
+            {/* Mobile-optimized layout - changed to flex column on small screens */}
+            <div className="sm:grid sm:grid-cols-3 sm:gap-2 flex flex-col space-y-2 sm:space-y-0">
               {/* Task column */}
               <div className="flex items-start">
                 <div className="w-5 h-5 rounded-full bg-teal-500/20 flex items-center justify-center mr-2 mt-0.5 flex-shrink-0">
@@ -93,10 +93,10 @@ export default function WorkflowPreview() {
               </div>
 
               {/* Current Action column */}
-              <div className="text-gray-300 text-sm">{item.action}</div>
+              <div className="text-gray-300 text-sm pl-7 sm:pl-0">{item.action}</div>
 
               {/* Status column */}
-              <div>
+              <div className="pl-7 sm:pl-0">
                 <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-teal-500/10 text-teal-400">
                   <Check className="h-3 w-3 mr-1 flex-shrink-0" /> {item.status}
                 </span>
