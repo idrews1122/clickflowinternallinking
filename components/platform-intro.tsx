@@ -45,14 +45,6 @@ export default function PlatformIntro() {
             >
               Get 100 Free Internal Links <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white rounded-md"
-            >
-              See How It Works
-            </Button>
           </div>
 
           <div className="w-full">
