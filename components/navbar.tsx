@@ -18,20 +18,7 @@ export default function Navbar() {
               <AnimatedWaveLogo />
             </Link>
 
-            <nav className="hidden md:ml-10 md:flex md:items-center md:space-x-8">
-              <Link href="#" className="text-gray-300 hover:text-teal-400">
-                Features
-              </Link>
-              <Link href="#" className="text-gray-300 hover:text-teal-400">
-                Pricing
-              </Link>
-              <Link href="#" className="text-gray-300 hover:text-teal-400">
-                About
-              </Link>
-              <Link href="#" className="text-gray-300 hover:text-teal-400">
-                Contact
-              </Link>
-            </nav>
+            <div className="hidden md:ml-10 md:block"></div>
           </div>
 
           <div className="hidden md:flex items-center">
@@ -54,32 +41,7 @@ export default function Navbar() {
       {/* Mobile menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-gray-900 border-b border-gray-800">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link
-              href="#"
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-gray-800 hover:text-white"
-            >
-              Features
-            </Link>
-            <Link
-              href="#"
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-gray-800 hover:text-white"
-            >
-              Pricing
-            </Link>
-            <Link
-              href="#"
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-gray-800 hover:text-white"
-            >
-              About
-            </Link>
-            <Link
-              href="#"
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-gray-800 hover:text-white"
-            >
-              Contact
-            </Link>
-          </div>
+          <div className="px-2 pt-2 pb-3 sm:px-3"></div>
           <div className="mt-3 px-5 pb-3">
             <Button
               className="w-full bg-teal-500 hover:bg-teal-600 text-white"

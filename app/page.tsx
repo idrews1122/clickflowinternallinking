@@ -2,7 +2,6 @@
 
 import { Check, ChevronDown } from "lucide-react"
 import Image from "next/image"
-import Link from "next/link"
 import ContactForm from "@/components/contact-form"
 import WorkflowSteps from "@/components/workflow-steps"
 import LinkSuggestions from "@/components/link-suggestions"
@@ -11,6 +10,7 @@ import Navbar from "@/components/navbar"
 import WorkflowPreview from "@/components/workflow-preview"
 import PlatformIntro from "@/components/platform-intro"
 import LoadingProgress from "@/components/loading-progress"
+import { Button } from "@/components/ui/button"
 
 export default function Home() {
   return (
@@ -171,24 +171,12 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col md:flex-row gap-8">
-              <Link href="#" className="text-gray-300 hover:text-teal-400">
-                Features
-              </Link>
-              <Link href="#" className="text-gray-300 hover:text-teal-400">
-                Pricing
-              </Link>
-              <Link href="#" className="text-gray-300 hover:text-teal-400">
-                About
-              </Link>
-              <Link href="#" className="text-gray-300 hover:text-teal-400">
-                Contact
-              </Link>
-              <Link href="#" className="text-gray-300 hover:text-teal-400">
-                Privacy Policy
-              </Link>
-              <Link href="#" className="text-gray-300 hover:text-teal-400">
-                Terms of Service
-              </Link>
+              <Button
+                className="bg-teal-500 hover:bg-teal-600 text-white"
+                onClick={() => document.getElementById("contact-form")?.scrollIntoView({ behavior: "smooth" })}
+              >
+                Get 100 Free Internal Links
+              </Button>
             </div>
           </div>
 
